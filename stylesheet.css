@@ -1,0 +1,196 @@
+@charset "UTF-8";
+
+.body{
+	margin: 0;
+	padding: 0;
+}
+.navbar{
+    float: none;
+}
+.fa-1x {
+	font-size: 2.0rem;
+}
+
+.text {
+	color: #ffffff;
+}
+
+.navbar p{
+	font-size: 40px;
+	text-align: left;
+	display: block;
+	margin-bottom: auto;
+	margin-top: 30px;
+	word-spacing: 50px;
+	letter-spacing: 2px;
+}
+.git {
+	margin-right:7px;
+}
+.navbar-nav {
+	font-size: 25px;
+	text-align: right;
+	padding-right: 20px;
+	padding-top: 1px;
+	
+}
+
+.navbar-brand {
+	font-size: 26px;
+}
+.hero{
+	height: 483px;
+	background-image: url("images/dogon-cave-paintings-1599791.jpg");
+	color: white;
+	text-align: center;
+	padding-top: 70px;
+	font-size: 95px;
+	background-size: cover;
+}
+.videoContainer {
+	position:inherit;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+}
+#hero {
+	position: relative;
+}
+.blank{
+	height: 1275px;
+	background-image: url("images/african_style_vector_pattern_146823.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	padding-top: 50px;
+	
+}
+.blank h2{
+	text-align:center;
+	font-size:70px;
+	color: white;
+
+}
+.blank h3{
+	font-size:50px;
+	color: white;
+}
+.blank h4{
+	font-size: 30px;
+	color: white;
+}
+.blank ol{
+	padding-left: 80px;
+	font-size: 40px;
+}
+.section{
+	height: 800px;
+	background-image: url("images/african_style_vector_pattern_146823.jpg");
+	background-attachment: fixed;
+	
+	
+}
+.facts {
+	background-image: url("images/african_style_vector_pattern_146823.jpg");
+	background-attachment: fixed;
+}
+.two {
+	background-image: url("images/dogonJungleFabric.png");
+}
+.row {
+	padding-top: 50px;
+	padding-bottom: 0px;
+	
+}
+.col-sm-6 {
+	padding-left: auto;
+	padding-right: auto;
+}
+
+.card-header{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	font-size: 60px;
+	background-color: black;
+	color: white;
+	column-width: 200px;
+	opacity: .9
+	
+}
+
+
+
+
+.dogon{
+	padding-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: transparent;
+}
+
+.batch{
+	height: 655px;
+	background-image: url("Folded Surface Speckle Dark.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	padding-top: 100px;
+}
+.bannerImage{
+	height: 535px;
+	width: 1340px;
+	background-image: url("meetingtable.png");
+	background-size:cover;
+	background-attachment: fixed;
+}
+.abstract_card{
+	height: 700px;
+	background-image: url("abstractTri.png");
+	background-color: #111;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	padding-top: 200px;
+}
+.footer{
+	height: 85px;
+	background-color: black;
+	border-top: 4px solid #ffffff;
+	color: white;
+	font-size: 22px
+}
+.footer p{
+	padding-top: 25px;
+	padding-left: 15px;
+}
+
+
+.center {
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+	width:600px;
+	height:260px;
+}
+
+
+
+
+
+
+
+.
+
+
+
+
+
+
+
+
