@@ -1,8 +1,63 @@
 @charset "UTF-8";
+/********************************************************CSS RESET**************************************************/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/****************************************CSS BEGINS***************************************/
 .body{
 	margin: 0;
 	padding: 0;
+}
+/***************************************NAVBAR******************************/
+.navbar.navbar-dark.bg-dark .form-inline.ml-auto .btn.btn-outline-white.btn-md.my-0.ml-sm-2 {
+    margin-right: 10px;
+    position: relative;
+    right: 12px;
 }
 .navbar{
     float: none;
@@ -38,14 +93,9 @@
 .navbar-brand {
 	font-size: 26px;
 }
+/*******************************************HERO******************************************************/
 .hero{
-	height: 483px;
-	background-image: url("images/dogon-cave-paintings-1599791.jpg");
-	color: white;
-	text-align: center;
-	padding-top: 70px;
-	font-size: 95px;
-	background-size: cover;
+	height: 483px;	
 }
 .videoContainer {
 	position:inherit;
@@ -59,53 +109,34 @@
 	align-items: center;
 	background-color: black;
 }
-#hero {
-	position: relative;
+/*************************************************INTRO****************************/
+.card .card-body p {
+    font-size: 22px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    line-height: 28px;
 }
-.blank{
-	height: 1275px;
-	background-image: url("images/african_style_vector_pattern_146823.jpg");
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+#intro .card {
+    border: medium;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    top: 30px;
+    -webkit-box-shadow: 0 1px 7px 3px #A6A5A5;
+    box-shadow: 0 1px 7px 3px #A6A5A5;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+/******************************************************WOODWORK SECTION*************************/
+#woodwork .row {
 	padding-top: 50px;
-	
+	padding-bottom: 0px;	
 }
-.blank h2{
-	text-align:center;
-	font-size:70px;
-	color: white;
-
+.card.text-white.w-100.h-50 .card-img-overlay .card-title {
+    font-size: 40px;
 }
-.blank h3{
-	font-size:50px;
-	color: white;
-}
-.blank h4{
-	font-size: 30px;
-	color: white;
-}
-.blank ol{
-	padding-left: 80px;
-	font-size: 40px;
-}
-.section{
-	height: 800px;
-	background-image: url("images/african_style_vector_pattern_146823.jpg");
-	background-attachment: fixed;
-	
-	
-}
-.facts {
-	background-image: url("images/african_style_vector_pattern_146823.jpg");
-	background-attachment: fixed;
-}
-.two {
-	background-image: url("images/dogonJungleFabric.png");
-}
-.row {
-	padding-top: 50px;
-	padding-bottom: 0px;
-	
+.card.text-white.w-100.h-50 .card-img-overlay .card-text {
+    font-size: 18px;
 }
 .col-sm-6 {
 	padding-left: auto;
@@ -120,77 +151,27 @@
 	color: white;
 	column-width: 200px;
 	opacity: .9
-	
+}
+.container .row .card-group {
+    margin: 0px;
+    padding: 0px;
+
+}
+.card-body .card-title a {
+    color: #000000;
+}
+/********************************************CAVE SECTION*******************************/
+#cave .row .card.text-white {
+    margin: 30px;
+    position: relative;
 }
 
-
-
-
-.dogon{
-	padding-top: 50px;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: transparent;
+#woodwork p {
+    font-size: 22px;
 }
-
-.batch{
-	height: 655px;
-	background-image: url("Folded Surface Speckle Dark.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	padding-top: 100px;
+#woodwork a {
+    font-size: 24px;
+    line-height: 28px;
+    word-spacing: 3px;
+    letter-spacing: 1px;
 }
-.bannerImage{
-	height: 535px;
-	width: 1340px;
-	background-image: url("meetingtable.png");
-	background-size:cover;
-	background-attachment: fixed;
-}
-.abstract_card{
-	height: 700px;
-	background-image: url("abstractTri.png");
-	background-color: #111;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	padding-top: 200px;
-}
-.footer{
-	height: 85px;
-	background-color: black;
-	border-top: 4px solid #ffffff;
-	color: white;
-	font-size: 22px
-}
-.footer p{
-	padding-top: 25px;
-	padding-left: 15px;
-}
-
-
-.center {
-	display: block;
-	margin-left:auto;
-	margin-right:auto;
-	width:600px;
-	height:260px;
-}
-
-
-
-
-
-
-
-.
-
-
-
-
-
-
-
-
