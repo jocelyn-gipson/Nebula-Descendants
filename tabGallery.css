@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* Set default styles for tab content */
+.tabcontent {
+  display: none;
+  padding-top: 5px;
+  text-align: center;
+}
+/* Style the tab buttons */
+.tablink {
+	background-image: url("images/african_style_vector_pattern_146823.jpg");
+	opacity: 0.9;
+  /*background-color: #8c6f5c;*/
+	color: #505857 ;
+	
+	/*float: right;*/
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 8px;
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 1.5;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+	width: 20.1%;
+	margin: 0px 0px;
+	
+}
+
+.box:active {
+	background-color: #505857;
+	color: #d9bba2;
+}
+/* Change background color of buttons on hover */
+.box:hover {
+	background-color: #505857;
+	color: #d9bba2;
+}
+
+/* Style each tab content individually */ 
+/*#London {background-color:red;}
+#Paris {background-color:green;}
+#Tokyo {background-color:blue;}
+#Oslo {background-color:orange;}*/
+
+/******************************************************TAB*************************/
+.card-body .card-title a {
+    color: #000000;
+}
+.tabcontent h1 {
+    margin-top: 5px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+}
+
+.card.middle .card-img-top .img-fluid {
+    height: 530px;
+}
+.card.last .card-img-top .img-fluid {
+    height: 270px;
+}
+.box {
+	background-color: #d9bba2;
+	border-radius: 10px;
+	height: 38px;
+}
+/******************************************************TAB*************************/
+#woodwork p {
+    font-size: 20px;
+}
+#woodwork a {
+    font-size: 22px;
+    line-height: 1.5;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+/******************************************************TAB*************************/
+
+
