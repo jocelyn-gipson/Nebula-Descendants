@@ -112,9 +112,9 @@ table {
 /*************************************************INTRO****************************/
 .card .card-body p {
     font-size: 22px;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     word-spacing: 3px;
-    line-height: 28px;
+    line-height: 1.4;
 }
 #intro .card {
     border: medium;
@@ -129,14 +129,14 @@ table {
 }
 /******************************************************WOODWORK SECTION*************************/
 #woodwork .row {
-	padding-top: 50px;
-	padding-bottom: 0px;	
+    margin-top: 70px;
 }
+
 .card.text-white.w-100.h-50 .card-img-overlay .card-title {
-    font-size: 40px;
+    font-size: 30px;
 }
 .card.text-white.w-100.h-50 .card-img-overlay .card-text {
-    font-size: 18px;
+    font-size: 14px;
 }
 .col-sm-6 {
 	padding-left: auto;
@@ -146,17 +146,13 @@ table {
 .card-header{
 	padding-top: 0px;
 	padding-bottom: 0px;
-	font-size: 60px;
+	font-size: 30px;
 	background-color: black;
 	color: white;
 	column-width: 200px;
 	opacity: .9
 }
-.container .row .card-group {
-    margin: 0px;
-    padding: 0px;
 
-}
 .card-body .card-title a {
     color: #000000;
 }
@@ -167,11 +163,22 @@ table {
 }
 
 #woodwork p {
-    font-size: 22px;
+    font-size: 20px;
 }
 #woodwork a {
-    font-size: 24px;
-    line-height: 28px;
-    word-spacing: 3px;
+    font-size: 22px;
+    line-height: 1.5;
+    word-spacing: 1px;
     letter-spacing: 1px;
+    text-align: center;
+}
+
+.fab {
+	margin: 0px 0px 10px 5px;
+	float: right;
+	color: aliceblue
+}
+
+.card-group {
+	height: 790px;
 }
