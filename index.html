@@ -7,125 +7,218 @@
 	<meta http-equiv="cache-control" content="no-cache" />
 	<meta http-equiv="expires" content="0" />
 	<meta http-equiv="pragma" content="no-cache" />
-	<!--------------------------------------------------------------------BOOTSTRAP CSS---------------------------------------------------------------->
+	<!--------------------------------------------------------------------BOOTSTRAP CSS---------------------------------------------->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<!--------------------------------------------------------------------FONTAWESOME CSS---------------------------------------------------------------->
+	
+	<!--------------------------------------------------------------------FONTAWESOME CSS---------------------------------------------->
 
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-	<!--------------------------------------------------------------------BOOTSTRAP JS---------------------------------------------------------------->
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-	<!--------------------------------------------------------------------BOOTSTRAP JQUERY---------------------------------------------------------------->
-
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		
-	<!--------------------------------------------------------------------ALTERNATIVE CSS---------------------------------------------------------------->
-
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">	
+	<!--------------------------------------------------------------------ALTERNATIVE CSS--------------------------------------------->
 	<link rel="stylesheet" href="css/animateSheet.css">
 	<link rel="stylesheet" href="css/stylesheet.css">
-		
+	<link rel="stylesheet" href="css/tabGallery.css">
+	
 	<title>Descendants of the Nebula</title>
 	</head>
 	<body>
-        
-		<div class = "header">
-			
+	<div class = "header">	
 	<!--------------------------NAVIGATION START--------------------------------->
-	<nav class="navbar navbar-dark bg-dark">
+	<nav class="navbar navbar-dark">
 		<a class="navbar-brand" href="NB/index.html">Descendents of the Nebula</a>
 <!--------------------SEARCH FIELD------------------>
-		<form class="form-inline ml-auto">
-			  <div class="md-form my-1">
-				<input class="form-control" type="text" placeholder="Search" aria-label="Search">
-			  </div>
-			  <button href="#!" class="btn btn-outline-white btn-md my-0 ml-sm-2" type="submit"> <i class="fas fa-search"></i></button>
-			</form>
+	<form class="form-inline ml-auto">
+	  <div class="md-form my-1">
+		<input class="form-control" type="text" placeholder="Search" aria-label="Search">
+	  </div>
+		  <button href="#!" class="btn btn-outline-white btn-md my-0 ml-sm-2" type="submit"> <i class="fas fa-search"></i></button>
+	</form>
 <!---------------COLLAPSIBLE MENU-----------------------> 
-
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="text"> <i class="fa fa-bars fa-1x"></i></span></button>		  
+	<button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="text"> <i class="fa fa-bars fa-2x"></i></span></button>		  
 	<div class="collapse navbar-collapse" id="collapsibleNavbar">
-		
-					<ul class="navbar-nav mr-auto">
-				
-						<li class="nav-item active"><a class="nav-link" href="index.html">Home 
-						<span class="sr-only">(current)</span></a></li>
+		<ul class="navbar-nav mr-auto">
 
-      					<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+			<li class="nav-item active"><a class="nav-link" href="index.html">Home 
+			<span class="sr-only">(current)</span></a></li>
 
-						<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-							
-						<p><a href="linkedin/in/jocelyn-gipson/"><i class="fab fa-linkedin"></i></a><a href="github.com/jocelyn-gipson"><i class="fab fa-github-square"></i></a></p>
-					
-					</ul>
-			  </div>	
-		  </nav>
-		</div>
-		
-	<div id="hero">
-		<div class="videoContainer">
-		<iframe class="videoContainer__video" width="1300" height="415" src="https://www.youtube.com/embed/84BwuyEr6k8" frameborder="0" allow=" autoplay; encrypted-media; picture-in-picture"></iframe>
-		</div>
+			<li class="nav-item"><a class="nav-link" href="contact.html">About</a></li>
+
+
+		</ul>
+	</div>	
+	</nav>
 	</div>
 		
+	<div class="hero">
+		<video autoplay muted loop id="myVideo">
+  		<source src="images/Dogon+Dama+_+National+Geographic.mp4" type="video/mp4">
+  		Your browser does not support HTML5 video.
+		</video>
+		<button id="myBtn" onclick="myFunction()">Pause</button>
+	</div>	
 					
 
 	<!--Main-->
 	<div class="row" id="intro" >
 		<div class="card">
-		  <div class="card-body">
-			  <hr>
-			<p class="text-center"> In a land of richest man who ever lived, land locked by rolling  desert sands, and covered with Baobab and Shea trees, comes the Dogon. An ancient poeples of Mali, exsisting for centuries, guided be their ancestorial spirits. Dogon culture is rooted in oral traditions, modern astrology, and art. Deep mysteries of gods and stars are transformed into art and dance, this is what the Dogon are known for.</p>		  
+		<div class="card-body">
+			<hr>
+			<p class="text-center"> In a land of richest man who ever lived, land locked by rolling  desert sands, and covered with Baobab and Shea trees, comes the Dogon. An ancient poeples of Mali, exsisting for centuries, guided be their ancestorial spirits. Dogon culture is rooted in oral traditions, modern astrology, and art. Deep mysteries of gods and stars are transformed into art and dance, this is what the Dogon are known for.</p>
 			<hr>
 		</div>
+		<img src="images/Mali-on-map.jpg" class="img-fluid" alt="Map of Mali">
 		</div>	
 	</div>
+	
 	<!--Links Section-->
-	<div class="container" id="woodwork">
-		<div class="row">
-			<div class="card-group" style="width: 125rem;">
-				<div class="card">
-					<img class="card-img-top img-fluid" src="images/dogonDoor.jpg" height="385px" alt="Card image cap">
-					<div class="card-body">
-						<h4 class="card-title"><a href="https://www.ozozalifestyle.com/collections/doors">Traditional Dogon Door</a></h4>
-						<p class="card-text">The carved doors and doorways portray ancestral figures to protect the people of the village and their families.Due to isolation, Dogon art has remained one of the most authentic on the African continent and it has remained mostly intact</p> 
-					</div>
-				</div>
-
-				<div class="card">
-					<img src="images/dogonStatue2.jpg" alt="Card image cap" class="card-img-top statue img-fluid">
-				</div>
-
-				<div class="card">
-					<img src="images/dogonstool.jpg" alt="Dogon Stool" height="250" class="card-img-top img-fluid">
-					<div class="card-body">
-						<h4 class="card-title"><a href="https://www.hamillgallery.com/DOGON/DogonStools/DogonStools.html">Hand Crafted Stools</a></h4>
-						<p class="card-text"> Simple abstract stools serve in everyday use, while the complex stools are ceremonial used by the highest of religious and political leaders. The seats are supported by figures representing ancestors. Those with a post in the middle are linked with mythology and cosmology. The seat representing heaven, the base the earth, and the post a tree, linking the two.</p>
-					</div>
-				</div>
-			</div>
-		</div>
+	<div id="Art" class="tabcontent">
+	<h1>Art</h1>
+	<div class="container">
+	  	<div class="card-group">
+	  		<div class="card last">
+	  			<div class="card-img-top"><img src="images/dogonDoor.jpg" width="365" class="img-fluid" alt="Dogon Door"></div>
+	  			<div class="card-body">
+	  				<h4 class="card-title"><a href="https://www.ozozalifestyle.com/collections/doors">Traditional Dogon Door</a></h4>
+					<p class="card-text">The carved doors and doorways portray ancestral figures to protect the people of the village and their families. Due to isolation, Dogon art has remained one of the most authentic on the African continent and it has remained mostly intact</p>
+	  			</div>
+	  		</div>
+	  		<div class="card middle">
+	  			<div class="card-img-top"><img src="images/dogonStatue2.jpg" width="365" class="img-fluid" alt="Dogon Statue"></div>
+	  			
+	  		</div>
+	  		<div class="card last">
+	  			<div class="card-img-top"><img src="images/dogonstool.jpg" width="365" class="img-fluid" alt="Dogon Stool"></div>
+	  			<div class="card-body">
+	  				<h4 class="card-title"><a href="https://www.ozozalifestyle.com/collections/doors">Dogon Handcarved Stool</a></h4>
+					<p class="card-text">From everyday, simple to the ornanate ceremonial seeting place of high priest and political leaders, Dogon stools are created. Supported by figures representing ancestors or nommo, those with a post in the middle are linked with Dogon's mythology. The seat represents heaven, the base represents the earth, and the post represents a tree, linking the two.</p>
+	  			</div>
+	  		</div>
+	  	</div>
+	  </div>
 	</div>
+		
+	<div id="Dance" class="tabcontent">
+	  <h1>Dance</h1>
+	  <div class="container">
+	  	<div class="card-group">
+	  		<div class="card last">
+	  			<div class="card-img-top"><img src="images/maxresdefault.jpg" class="img-fluid" alt="Dogon Door"></div>
+	  			<div class="card-body">
+	  				<h4 class="card-title"><a href="https://www.ozozalifestyle.com/collections/doors">Traditional Dogon Door</a></h4>
+					<p class="card-text">The carved doors and doorways portray ancestral figures to protect the people of the village and their families.Due to isolation, Dogon art has remained one of the most authentic on the African continent and it has remained mostly intact</p>
+	  			</div>
+	  		</div>
+	  		<div class="card middle">
+	  			<div class="card-img-top"><img src="images/Dogon12.jpg" width="360" class="img-fluid" alt="Dogon"></div>
+	  			
+	  		</div>
+	  		<div class="card last">
+	  			<div class="card-img-top"><img src="images/womanDogonDance.jpg" alt="Dogon Stool" class="img-fluid"></div>
+	  			<div class="card-body">
+	  				<h4 class="card-title"><a href="https://www.ozozalifestyle.com/collections/doors">Traditional Dogon Door</a></h4>
+					<p class="card-text">The carved doors and doorways portray ancestral figures to protect the people of the village and their families.Due to isolation, Dogon art has remained one of the most authentic on the African continent and it has remained mostly intact.</p>
+	  			</div>
+	  		</div>
+	  	</div>
+	  </div> 
+	</div>
+	
+	<div id="Mythology" class="tabcontent">
+	  <h1>Mythology</h1>
+	  <div class="container">
+	  	<div class="card-group">
+	  		<div class="card last">
+	  			<div class="card-img-top"><img src="images/nommo-figures.jpg" width="365" class="img-fluid" alt="Dogon Door"></div>
+	  			<div class="card-body">
+	  				<h4 class="card-title"><a href="https://www.ozozalifestyle.com/collections/doors">Nommo</a></h4>
+					<p class="card-text">Dogon often refer to their ancestors as the Nommo. The Nommo were considered "Teachers" and "Monitor" which is a similar to the Sumerian and Assyrian Gods the Annunaki.</p>
+	  			</div>
+	  		</div>
+	  		<div class="card middle">
+	  			<div class="card-img-top"><img src="images/Nommos06.jpg" width="370" class="img-fluid" alt="Dogon Statue"></div>
+	  			
+	  		</div>
+	  		<div class="card last">
+	  			<div class="card-img-top"><img src="images/main.jpg" width="365" class="img-fluid" alt="Dogon Stool"></div>
+	  			<div class="card-body">
+	  				<h4 class="card-title"><a href="https://www.quora.com/How-did-the-Dogon-tribe-of-Mali-have-advanced-knowledge-of-astronomy"></a>Astrology</h4>
+					<p>The mythology of the the dogon aligns with other ancients cultures in the world. In fact, the word Dogon in Sumerian is in reference to great ruler or fish or fishing. The Dogon tribe has recorded astrological events in the form of art. The disk represents the an astrological event that took place in 3123BC.</p>
+	  			</div>
+	  		</div>
+	  	</div>
+	  </div>
+	</div>
+	
+	<div id="Mali" class="tabcontent">
+	  <h1>Mali</h1>
+	  <div class="container">
+	  	<div class="card-group">
+	  		<div class="card last">
+	  			<div class="card-img-top"><img src="images/dogonHouses.jpg" width="365" class="img-fluid" alt="Dogon Door"></div>
+	  			<div class="card-body">
+	  				<h4 class="card-title"><a href="https://www.ozozalifestyle.com/collections/doors">Traditional Dogon Door</a></h4>
+					<p class="card-text">The carved doors and doorways portray ancestral figures to protect the people of the village and their families.Due to isolation, Dogon art has remained one of the most authentic on the African continent and it has remained mostly intact</p>
+	  			</div>
+	  		</div>
+	  		<div class="card middle">
+	  			<div class="card-img-top"><img src="images/vernacular-architecture-mali.jpg" width="365" class="img-fluid" alt="Dogon Statue"></div>
+	  			
+	  		</div>
+	  		<div class="card last">
+	  			<div class="card-img-top"><img src="images/dogon-mali.jpg" width="365" class="img-fluid" alt="Dogon Stool"></div>
+	  			<div class="card-body">
+	  				<h4 class="card-title"><a href="https://www.ozozalifestyle.com/collections/doors">Traditional Dogon Door</a></h4>
+					<p class="card-text">The carved doors and doorways portray ancestral figures to protect the people of the village and their families.Due to isolation, Dogon art has remained one of the most authentic on the African continent and it has remained mostly intact</p>
+	  			</div>
+	  		</div>
+	  	</div>
+	  	
+	  </div>
+	</div>
+<center>
+	<button class="tablink" onclick="openTopic('Art', this)" id="defaultOpen"><div class="box">Art</div></button>
+	<button class="tablink" onclick="openTopic('Dance', this)"><div class="box">Dance</div></button>
+	<button class="tablink" onclick="openTopic('Mythology', this)"><div class="box">Mythology</div></button>
+	<button class="tablink" onclick="openTopic('Mali', this)"><div class="box">Mali</div></button>
+</center>
+	
 
+		
+		
+		
+		
 	<div class="container" id="cave">
 		<div class="row">
 			<div class="card text-white w-100 h-50">
-			  <img class="card-img" src="images/dogon-cave-paintings-1599791.jpg" alt="Card image">
+			  <img class="card-img" src="images/dogon-cave-paintings-1599791.jpg" height="500px" alt="Card image">
 			  <div class="card-img-overlay">
-				<h5 class="card-title">Card title</h5>
-				<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-				<p class="card-text">Last updated 3 mins ago</p>
+				<h5 class="card-title">Boys to Men</h5>
+				<p class="card-text cave">Researchers have photographed the Dogon Cave paintings for more than 100 years, but the Dogon Tribe have been paintings rocks for much longer. Each image painted by finger, represents a special part of a boy's intiation into manhood. This secretly held intiation is one of many restricted ceremonies performed by the tribe and is held in high regard by tribe elders. Accompaning the painting is the circumsison stone also used in the right of passage.</p>
 			  </div>
 			</div>
-			
 		</div>
 	</div>
-		https://www.metmuseum.org/art/metpublications/art_of_the_dogon_selections_from_the_lester_wunderman_collection
+
+<!-----HERO VIDEO SCRIPT-------->
+	<script>
+	var video = document.getElementById("myVideo");
+	var btn = document.getElementById("myBtn");
+
+	function myFunction() {
+	  if (video.paused) {
+	    video.play();
+	    btn.innerHTML = "Pause";
+	  } else {
+    	video.pause();
+    	btn.innerHTML = "Play";
+	  }
+	}
+	</script>
 	</body>
 	<!------------------------------------------------------------------- JS/JQUERY-->
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap-4.0.0.js"></script>
+	<script src="js/tabGallery.js"></script>
+	
 </html>

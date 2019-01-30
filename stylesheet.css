@@ -1,73 +1,35 @@
 @charset "UTF-8";
 /********************************************************CSS RESET**************************************************/
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 /****************************************CSS BEGINS***************************************/
 .body{
 	margin: 0;
 	padding: 0;
 }
 /***************************************NAVBAR******************************/
-.navbar.navbar-dark.bg-dark .form-inline.ml-auto .btn.btn-outline-white.btn-md.my-0.ml-sm-2 {
-    margin-right: 10px;
-    position: relative;
-    right: 12px;
+.header .navbar.navbar-dark .navbar-brand {
+    color: #FFFFFF;
+}
+.text {
+	color: #ffffff;
+	text-shadow: 1px 1px 1px #505857;
+}
+.custom-toggler.navbar-toggler {
+    border-color: rgba(255,255,255,1.00);
+	border-width: medium;
+	border-radius: 7px;
+	box-shadow: 1px 0px 1px 0px;
+	margin-left: 10px;
+}
+.fa-2x {
+	font-size: 1.8rem;
+}
+button {
+	position: relative;
+	right: 12px
 }
 .navbar{
     float: none;
-}
-.fa-1x {
-	font-size: 2.0rem;
-}
-
-.text {
-	color: #ffffff;
 }
 
 .navbar p{
@@ -91,23 +53,50 @@ table {
 }
 
 .navbar-brand {
-	font-size: 26px;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 0px;
+    text-shadow: 1px 1px #505857;
+    text-decoration: overline;
 }
+
+
+.navbar-dark {
+	/*background-color: #505857;*/
+	background-image: url("../images/dogon_pattern.jpg");
+	opacity: 0.9;
+	border-bottom: groove 8px #505857;
+	padding: 8px 15px;
+}
+
 /*******************************************HERO******************************************************/
 .hero{
-	height: 483px;	
+	height: 510px;
+	background-color: #000;
+	padding: 5px 0px;
 }
-.videoContainer {
-	position:inherit;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background-color: black;
+#myVideo {
+  min-width: 100%; 
+  min-height: 25%;
+  height: 500px;
+  width: 100%;
+}
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #505857;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  bottom: 53px;
+  left: 230px;
+}
+
+#myBtn:hover {
+  background: #d9bba2;
+  color: #fff;
 }
 /*************************************************INTRO****************************/
 .card .card-body p {
@@ -126,35 +115,8 @@ table {
     box-shadow: 0 1px 7px 3px #A6A5A5;
     margin-right: 40px;
     margin-left: 40px;
-}
-/******************************************************WOODWORK SECTION*************************/
-#woodwork .row {
-    margin-top: 70px;
-}
-
-.card.text-white.w-100.h-50 .card-img-overlay .card-title {
-    font-size: 30px;
-}
-.card.text-white.w-100.h-50 .card-img-overlay .card-text {
-    font-size: 14px;
-}
-.col-sm-6 {
-	padding-left: auto;
-	padding-right: auto;
-}
-
-.card-header{
-	padding-top: 0px;
-	padding-bottom: 0px;
-	font-size: 30px;
-	background-color: black;
-	color: white;
-	column-width: 200px;
-	opacity: .9
-}
-
-.card-body .card-title a {
-    color: #000000;
+    width: 80%;
+    vertical-align: center;
 }
 /********************************************CAVE SECTION*******************************/
 #cave .row .card.text-white {
@@ -176,9 +138,26 @@ table {
 .fab {
 	margin: 0px 0px 10px 5px;
 	float: right;
-	color: aliceblue
+	color: aliceblue;
 }
 
 .card-group {
 	height: 790px;
+}
+
+.cave {
+    font-size: 20px;
+	font-weight: 500;
+    color: #505857;
+}
+.row .card.text-white.w-100.h-50 .card-img {
+    opacity: 0.8;
+}
+
+
+
+
+
+#intro .card .img-fluid {
+    height: auto;
 }
