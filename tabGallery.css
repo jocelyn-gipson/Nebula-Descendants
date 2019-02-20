@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* Set default styles for tab content */
 .tabcontent {
-    display: none;
+    display:none;
     padding-top: 0px;
     text-align: center;
     margin-top: 40px;
@@ -17,13 +17,15 @@
 	outline: none;
 	cursor: pointer;
 	padding: 8px;
-	font-size: 22px;
+	font-size: 18px;
 	font-weight: 600;
-	line-height: 1.5;
+	line-height: 2;
     word-spacing: 1px;
     letter-spacing: 1px;
-	width: 20.3%;
-	margin-bottom: 40px;	
+	width: 19.95%;
+	margin-bottom: 40px;
+	position: relative;
+	left: 0px;
 }
 
 .box:active {
@@ -36,11 +38,6 @@
 	color: #d9bba2;
 }
 
-/* Style each tab content individually */ 
-/*#London {background-color:red;}
-#Paris {background-color:green;}
-#Tokyo {background-color:blue;}
-#Oslo {background-color:orange;}*/
 
 /******************************************************TAB*************************/
 .card-body .card-title a {
@@ -61,4 +58,16 @@
 	background-color: #d9bba2;
 	border-radius: 10px;
 	height: 38px;
+}
+
+.last img{
+	height: 300px;
+}
+
+.middle img{
+	height: 620px;
+}
+
+.card-group {
+	background-color: black;
 }

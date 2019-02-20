@@ -100,8 +100,8 @@ button {
 }
 /*************************************************INTRO****************************/
 .card .card-body p {
-    font-size: 22px;
-    letter-spacing: 1.5px;
+    font-size:18x;
+    letter-spacing: 1px;
     word-spacing: 3px;
     line-height: 1.4;
 }
@@ -115,7 +115,7 @@ button {
     box-shadow: 0 1px 7px 3px #A6A5A5;
     margin-right: 40px;
     margin-left: 40px;
-    width: 80%;
+    width: 100%;
     vertical-align: center;
 }
 /********************************************CAVE SECTION*******************************/
@@ -124,25 +124,10 @@ button {
     position: relative;
 }
 
-#woodwork p {
-    font-size: 20px;
-}
-#woodwork a {
-    font-size: 22px;
-    line-height: 1.5;
-    word-spacing: 1px;
-    letter-spacing: 1px;
-    text-align: center;
-}
-
 .fab {
 	margin: 0px 0px 10px 5px;
 	float: right;
 	color: aliceblue;
-}
-
-.card-group {
-	height: 790px;
 }
 
 .cave {
@@ -154,10 +139,9 @@ button {
     opacity: 0.8;
 }
 
-
-
-
-
-#intro .card .img-fluid {
-    height: auto;
+.mali img{
+  width: 70%;
+}
+.mali{
+  margin: 50px 0px;
 }
